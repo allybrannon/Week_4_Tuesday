@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let familyNames = ["Ally", "Alexis", "Watson"];
+      //   familyNames.forEach(function (name) {
+      //     console.log(name);
+      //   });
+
+      familyNames.map((name) => `${name} is a person`);
+
+      const callback = (item, index) => {
+        console.log(`${index}. ${item}`);
+      };
+      //   familyNames.forEach(callback);
+
+      ["item1", "item2", "item3"].forEach(callback);
+
+      familyNames.forEach((name) => console.log(`${name} is Ally's family`));
+
+      //   let template = {
+      //     name: null,
+      //     side: "light",
+      //     height: "normal",
+      //   };
+
+      //   let starWarsNames = ["luke", "leia", "Chewbacca", "yoda", "jar jar"];
+
+      //   starWarsNames.forEach((name, idx) => {
+      //     let res = Object.assign({}, template);
+      //     res.name = name;
+
+      //     if (name == "Chewbacca" || name == "Jar Jar") {
+      //       res.height = "tall";
+      //     } else if (name == "yoda") {
+      //       res.height = "short";
+      //     }
+      //     name == "Jar Jar" ? (res.side = "Dark") : null;
+
+      //     starWarsNames[idx] = res;
+      //   });
+
+      //   let results = starWarsNames.map((char, index) => {
+      //     return char.name;
+      //   });
+      //   results;
+    </script>
+  </body>
+</html>

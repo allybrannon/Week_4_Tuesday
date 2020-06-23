@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      function printBox(width, height) {
+        let top = "-".repeat(width);
+        console.log(top);
+        for (let i = 0; i < height; i++) {
+          console.log("|" + " ".repeat(width - 2) + "|");
+        }
+        console.log(top);
+      }
+
+      printBox(3, 1);
+
+      function printBanner(word) {
+        let border = "*".repeat(word.length);
+        console.log(end);
+        console.log("* " + text + " *");
+        console.log(end);
+      }
+
+      printBanner("Welcome to DigitalCrafts");
+    </script>
+  </body>
+</html>
